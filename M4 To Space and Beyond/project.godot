@@ -31,7 +31,7 @@ window/stretch/mode="canvas_items"
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/gdpractice/plugin.cfg")
+enabled=PackedStringArray("res://addons/gdpractice/plugin.cfg", "res://addons/godot-vim/plugin.cfg")
 
 [input]
 
