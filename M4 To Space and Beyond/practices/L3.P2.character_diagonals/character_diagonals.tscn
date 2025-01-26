@@ -1,8 +1,8 @@
-[gd_scene load_steps=8 format=3]
+[gd_scene load_steps=8 format=3 uid="uid://d0iwp6cp54gvd"]
 
-[ext_resource type="Texture2D" path="res://assets/practice_assets/shape_ship.png" id="1_2u4ul"]
+[ext_resource type="Texture2D" uid="uid://d1xp2mgpkkc42" path="res://assets/practice_assets/shape_ship.png" id="1_2u4ul"]
 [ext_resource type="Script" path="res://practices/L3.P2.character_diagonals/character_diagonals.gd" id="2_v7r4g"]
-[ext_resource type="Texture2D" path="res://assets/practice_assets/ellipse_white.png" id="3_1dn5b"]
+[ext_resource type="Texture2D" uid="uid://bkueifls7csiy" path="res://assets/practice_assets/ellipse_white.png" id="3_1dn5b"]
 [ext_resource type="PackedScene" path="res://practices/L3.P2.character_diagonals/background.tscn" id="4_x4qc8"]
 
 [sub_resource type="Curve" id="Curve_cxpdg"]
@@ -32,4 +32,4 @@ process_material = SubResource("ParticleProcessMaterial_5188s")
 texture = ExtResource("3_1dn5b")
 visibility_rect = Rect2(-4000, -4000, 4000, 4000)
 
-[node name="Background" type="Node" parent="." instance=ExtResource("4_x4qc8")]
+[node name="Background" parent="." instance=ExtResource("4_x4qc8")]
