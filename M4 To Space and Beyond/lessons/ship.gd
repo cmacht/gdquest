@@ -19,7 +19,7 @@ func _process(delta: float) -> void:
 		max_speed = boost_speed
 		get_node('Timer').start()
 		
-	var desired_velocity := velocity * max_speed
+	var desired_velocity := max_speed * direction
 	var steering_vector := desired_velocity - velocity
 	velocity += steering_vector * steering_factor * delta
 	position += velocity * delta
