@@ -1,9 +1,9 @@
-[gd_scene load_steps=8 format=3]
+[gd_scene load_steps=8 format=3 uid="uid://dyx3n1dno5rek"]
 
-[ext_resource type="Texture2D" path="res://assets/practice_assets/shape_ship.png" id="1_uewrr"]
-[ext_resource type="Script" path="res://practices/L5.P1.steering/steering.gd" id="2_op538"]
-[ext_resource type="Texture2D" path="res://assets/practice_assets/ellipse_white.png" id="3_jxxr0"]
-[ext_resource type="PackedScene" path="res://practices/L5.P1.steering/background.tscn" id="4_0k8qd"]
+[ext_resource type="Texture2D" uid="uid://d1xp2mgpkkc42" path="res://assets/practice_assets/shape_ship.png" id="1_uewrr"]
+[ext_resource type="Script" path="res://practices/L5.P1.steering/steering.gd" id="2_ktssq"]
+[ext_resource type="Texture2D" uid="uid://bkueifls7csiy" path="res://assets/practice_assets/ellipse_white.png" id="3_jxxr0"]
+[ext_resource type="PackedScene" path="res://practices/L5.P1.steering/background.tscn" id="4_v6c4p"]
 
 [sub_resource type="Curve" id="Curve_p40xv"]
 _data = [Vector2(0, 0.663194), 0.0, 0.0, 0, 0, Vector2(1, 0), -0.0319997, 0.0, 0, 0]
@@ -21,7 +21,7 @@ scale_curve = SubResource("CurveTexture_wu7u1")
 [node name="Sprite2D" type="Sprite2D"]
 position = Vector2(960, 540)
 texture = ExtResource("1_uewrr")
-script = ExtResource("2_op538")
+script = ExtResource("2_ktssq")
 
 [node name="GPUParticles2D" type="GPUParticles2D" parent="."]
 modulate = Color(0.584314, 0.380392, 0.933333, 1)
@@ -31,4 +31,4 @@ process_material = SubResource("ParticleProcessMaterial_rwfi4")
 texture = ExtResource("3_jxxr0")
 visibility_rect = Rect2(-4000, -4000, 4000, 4000)
 
-[node name="Background" type="Node" parent="." instance=ExtResource("4_0k8qd")]
+[node name="Background" parent="." instance=ExtResource("4_v6c4p")]
