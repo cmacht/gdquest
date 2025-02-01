@@ -16,6 +16,9 @@ func _process(delta: float) -> void:
 		direction = direction.normalized()
 		
 	if Input.is_action_just_pressed('boost'):
+		var main_thruster := get_node_or_null('MainThruster')
+		if main_thruster:
+			main_thruster.scale *= 1.2
 		max_speed = boost_speed
 		get_node('Timer').start()
 		
