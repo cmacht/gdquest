@@ -1,0 +1,28 @@
+[gd_scene load_steps=6 format=3]
+
+[ext_resource type="PackedScene" path="res://practices/L5.P1.code_an_energy_pack/ship_energy_pack.tscn" id="1_kh3df"]
+[ext_resource type="Script" path="res://practices/L5.P1.code_an_energy_pack/ship_energy_pack.gd" id="2_kvat5"]
+[ext_resource type="PackedScene" path="res://practices/L5.P1.code_an_energy_pack/energy_pack.tscn" id="3_rphf2"]
+[ext_resource type="Script" path="res://practices/L5.P1.code_an_energy_pack/energy_pack.gd" id="4_36rbu"]
+[ext_resource type="PackedScene" path="res://practices/L5.P1.code_an_energy_pack/background.tscn" id="5_b11ee"]
+
+[node name="CodeAnEnergyPack" type="Node2D"]
+position = Vector2(960, 540)
+
+[node name="ShipEnergyPack" type="Area2D" parent="." instance=ExtResource("1_kh3df")]
+position = Vector2(-556, 0)
+script = ExtResource("2_kvat5")
+
+[node name="EnergyPack" type="Area2D" parent="." instance=ExtResource("3_rphf2")]
+position = Vector2(-221, -1)
+script = ExtResource("4_36rbu")
+
+[node name="EnergyPack2" type="Area2D" parent="." instance=ExtResource("3_rphf2")]
+position = Vector2(2, -1)
+script = ExtResource("4_36rbu")
+
+[node name="EnergyPack3" type="Area2D" parent="." instance=ExtResource("3_rphf2")]
+position = Vector2(197, -1)
+script = ExtResource("4_36rbu")
+
+[node name="Background" type="Node" parent="." instance=ExtResource("5_b11ee")]
